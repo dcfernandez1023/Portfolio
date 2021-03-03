@@ -3,9 +3,9 @@
 }
 
 html, body {
-  height: 100%;
-  background-repeat: no-repeat;
-  background-image: url('../background.jpg');
+  background: url('../background.jpg') no-repeat center center fixed;
   background-size: cover;
+  height: 100%;
+  overflow: hidden;
   /*background-color: rgb(85, 170, 170);*/
 }
