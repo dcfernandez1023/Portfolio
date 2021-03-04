@@ -13,10 +13,18 @@ react95/core imports
 /**********/
 import { Icon, Modal, Frame } from '@react95/core';
 
+/**********
+react-pdf imports
+/**********/
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-function Contact(props) {
+
+function Resume(props) {
 
   const[show, setShow] = useState(false);
+  const[pageNumber, setPageNumber] = useState(1);
+  const[numPages, setNumPages] = useState(null);
 
   useEffect(() => {
     setShow(props.show);
@@ -27,28 +35,35 @@ function Contact(props) {
     props.handleClose();
   }
 
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  }
+
   if(show) {
     const lineBreak = <div style = {{height: "1px"}}> </div>
     return (
       <Modal
-        title = "Contact.exe"
+        title = "Resume.exe"
         closeModal = {handleClose}
         icon = "mapi32_501_32x32_4bit"
         defaultPosition = {{
           x: 0,
           y: 0
         }}
-        style = {{maxHeight: "500px", maxWidth: "500px", margin: "10px"}}
+        style = {{maxHeight: "700px", maxWidth: "900px", margin: "10px"}}
       >
         <Frame
           bg = "white"
-          style = {{overflowY: "auto", maxWidth: "500px", maxHeight: "475px"}}
+          style = {{overflowY: "auto", maxWidth: "875px", maxHeight: "675px"}}
         >
           <div style = {{margin: "5px"}}>
-            <p> 📧 dominic.fernandez1023@gmail.com </p>
-            <p> 📱 1 (650) 534-7403 </p>
-            <p> 💻 <a href = 'https://github.com/dcfernandez1023' target = "_blank"> GitHub </a> </p>
-            <p> 💼 <a href = 'https://www.linkedin.com/in/dominic-fernandez-480a20192' target = "_blank"> Linkedin </a> </p>
+            <Document
+              file = 'resume.pdf'
+              onLoadError = {console.error}
+              onLoadSuccess = {onDocumentLoadSuccess}
+            >
+              <Page pageNumber = {pageNumber} />
+            </Document>
           </div>
         </Frame>
       </Modal>
@@ -59,4 +74,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default Resume;

@@ -75,7 +75,6 @@ function ItemBar(props) {
   return (
     <div>
       {listItems.map((item) => {
-        console.log(item.displayName);
         return (
           <div>
             <IconContainer
@@ -86,7 +85,7 @@ function ItemBar(props) {
                 name = {item.icon}
                 title = {item.displayName}
               />
-              {item.displayName}
+              <u> {item.displayName} </u>
             </IconContainer>
           </div>
         );

@@ -14,7 +14,7 @@ react95/core imports
 import { Icon, Modal, Frame } from '@react95/core';
 
 
-function Contact(props) {
+function Projects(props) {
 
   const[show, setShow] = useState(false);
 
@@ -31,7 +31,7 @@ function Contact(props) {
     const lineBreak = <div style = {{height: "1px"}}> </div>
     return (
       <Modal
-        title = "Contact.exe"
+        title = "Projects.exe"
         closeModal = {handleClose}
         icon = "mapi32_501_32x32_4bit"
         defaultPosition = {{
@@ -45,10 +45,7 @@ function Contact(props) {
           style = {{overflowY: "auto", maxWidth: "500px", maxHeight: "475px"}}
         >
           <div style = {{margin: "5px"}}>
-            <p> 📧 dominic.fernandez1023@gmail.com </p>
-            <p> 📱 1 (650) 534-7403 </p>
-            <p> 💻 <a href = 'https://github.com/dcfernandez1023' target = "_blank"> GitHub </a> </p>
-            <p> 💼 <a href = 'https://www.linkedin.com/in/dominic-fernandez-480a20192' target = "_blank"> Linkedin </a> </p>
+          Projects go here !
           </div>
         </Frame>
       </Modal>
@@ -59,4 +56,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default Projects;

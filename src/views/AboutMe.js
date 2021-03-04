@@ -36,7 +36,7 @@ function AboutMe(props) {
         icon = "progman_37_32x32_4bit"
         defaultPosition = {{
           x: 0,
-          y: 100
+          y: 0
         }}
         style = {{maxHeight: "500px", maxWidth: "500px", margin: "10px"}}
       >

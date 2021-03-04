@@ -12,6 +12,8 @@ local component imports
 /**********/
 import AboutMe from './AboutMe.js';
 import Contact from './Contact.js';
+import Resume from './Resume.js';
+import Projects from './Projects.js';
 import PortfolioBar from './PortfolioBar.js';
 import ItemBar from './ItemBar.js';
 
@@ -55,7 +57,7 @@ function Portfolio() {
       displayName: "Contact",
       icon: "mapi32_501_32x32_4bit",
       onClick: null
-    }
+    },
   ];
 
   return (
@@ -67,6 +69,14 @@ function Portfolio() {
       <Contact
         show = {showContact}
         handleClose = {setShowContact}
+      />
+      <Resume
+        show = {showResume}
+        handleClose = {setShowResume}
+      />
+      <Projects
+        show = {showProjects}
+        handleClose = {setShowProjects}
       />
       <ItemBar
         modalTogglers = {MODALTOGGLERS}
