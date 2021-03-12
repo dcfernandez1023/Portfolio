@@ -14,6 +14,7 @@ import AboutMe from './AboutMe.js';
 import Contact from './Contact.js';
 import Resume from './Resume.js';
 import Projects from './Projects.js';
+import Skills from './Skills.js';
 import PortfolioBar from './PortfolioBar.js';
 import ItemBar from './ItemBar.js';
 
@@ -24,12 +25,14 @@ function Portfolio() {
   const[showResume, setShowResume] = useState(false);
   const[showProjects, setShowProjects] = useState(false);
   const[showContact, setShowContact] = useState(false);
+  const[showSkills, setShowSkills] = useState(false);
 
   const MODALTOGGLERS = {
     aboutMe: setShowAbout,
     resume: setShowResume,
     projects: setShowProjects,
-    contact: setShowContact
+    contact: setShowContact,
+    skills: setShowSkills
   }
 
   // list items to display in taskbar
@@ -58,6 +61,12 @@ function Portfolio() {
       icon: "mapi32_501_32x32_4bit",
       onClick: null
     },
+    {
+      value: "skills",
+      displayName: "Skills",
+      icon: "joy_102_32x32_4bit",
+      onClick: null
+    }
   ];
 
   return (
@@ -77,6 +86,10 @@ function Portfolio() {
       <Projects
         show = {showProjects}
         handleClose = {setShowProjects}
+      />
+      <Skills
+        show = {showSkills}
+        handleClose = {setShowSkills}
       />
       <ItemBar
         modalTogglers = {MODALTOGGLERS}

@@ -60,4 +60,28 @@ export const projects = [
       "Cloud Firestore"
     ]
   },
+  {
+    name: "FernsBingo",
+    timeline: {
+      start: "12/20",
+      end:"12/20"
+    },
+    repoLink: "https://github.com/dcfernandez1023/ferns-bingo",
+    appLink: "https://ferns-bingo.web.app/",
+    description: `I built this application for my family to use during Christmas 2020.  It is a Christmas tradition that
+    we have always had to play Bingo and donate prizes/gifts to the winner of each Bingo game.  However, due to the pandemic,
+    we could not gather and play Bingo the way we normally did.  So I created a web app that generated unique Bingo cards and another
+    person in my family created an application that randomly picked Bingo numbers.  We used both of these applications to keep our annual
+    Bingo tradition alive, and it was really fun to build.
+    `,
+    role: `I played the role of mainly a front-end developer on this project, as it was a very front-end heavy application.  I also did not
+    need to code or setup a back-end server since I used Google Firebase as a serverless back-end.`,
+    technologies: [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Firebase",
+      "Cloud Firestore"
+    ]
+  }
 ]

@@ -56,7 +56,7 @@ function Projects(props) {
                   <div> <strong> {project.name} </strong> - <i> {project.timeline.start} to {project.timeline.end} </i> </div>
                   <div> <a href = {project.repoLink} target = "_blank"> GitHub Repo</a>  |  <a href = {project.appLink} target = "_blank"> {project.name} </a> </div>
                   <p></p>
-                  <div> <u> Description </u> </div>
+                  <div> 📝 <u> Description </u> </div>
                   <div> {project.description} </div>
                   <p></p>
                   <div> <u> Role </u> </div>

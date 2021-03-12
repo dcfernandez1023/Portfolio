@@ -48,16 +48,20 @@ function AboutMe(props) {
             <h2> Hello 👋 </h2>
             <p>
               My name is Dominic Fernandez. I am currently a student at the University of San Francisco pursuing a B.S. in Computer Science.
-              Creating software fascinates me, and I find myself consistently combining the concepts learned at university with new technologies
-              that I explore independently on many different projects.
+              Software Development fascinates me, and I find myself consistently combining the concepts learned at university with new technologies
+              that I explore independently on many different projects.  As a result, I have built a few applications aligned with my interests and hobbies,
+              such as a fitness diary and an automobile management platform.
             </p>
             {lineBreak}
+            <p> I'm always excited to learn more and meet new people, so feel free to contact me! </p> 
+            {/*
             <p>
               As a result, I have built a few applications aligned with my interests and hobbies such as:
                 <li>🏋️ A fitness diary web app that tracks and analyzes user inputted workout data at a personal and customizable level </li>
                 <li>🏕️ A backpacking gear management app to gather gear to pack and to determine how expensive and heavy the gear will be </li>
                 <li>🚗 An automobile management platform that allows users to conveniently manage, analyze, and log maintenance, cost, and scheduled services for their cars </li>
             </p>
+            */}
           </div>
         </Frame>
       </Modal>
