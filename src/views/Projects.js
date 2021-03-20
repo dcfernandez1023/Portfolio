@@ -59,11 +59,11 @@ function Projects(props) {
                   <div> 📝 <u> Description </u> </div>
                   <div> {project.description} </div>
                   <p></p>
-                  <div> <u> Role </u> </div>
+                  <div> 💼 <u> Role </u> </div>
                   <div> {project.role} </div>
                   <p></p>
                   <div>
-                    <div> <u> Technologies Used </u> </div>
+                    <div> ⚙️ <u> Technologies Used </u> </div>
                     {project.technologies.map((tech) => {
                       return (
                         <li> {tech} </li>

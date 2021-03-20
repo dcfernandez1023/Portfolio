@@ -10,7 +10,7 @@ export const projectModel = [
 
 export const projects = [
   {
-    name: "TrainingDiary",
+    name: "💪 TrainingDiary",
     timeline: {
       start: "05/2020",
       end: "08/2020"

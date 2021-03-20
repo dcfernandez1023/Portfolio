@@ -39,7 +39,7 @@ export const familiar = [
     skill: "PostgreSQL"
   },
   {
-    skill: "Express (Node.js)"
+    skill: "Express"
   },
   {
     skill: "Heroku"
