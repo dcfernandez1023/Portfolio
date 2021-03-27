@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 export const notifyVisit = (location) => {
-  const route = "http://localhost:5000/api/sendSms";
-  axios.post(route)
+  const route = "https://portfolio-notifier.herokuapp.com/api/sendVisitEmail";
+  axios.post(route, location)
     .then((res) => {
-      console.log("Successfully sent SMS request");
+      return;
     }).catch((error) => {
       console.log(error);
     });

@@ -32,8 +32,7 @@ function App() {
 
   const notifyMeOfVisit = () => {
     const onSuccess = (res) => {
-      console.log(res);
-      NOTIFIER.notifyVisit(res.toString());
+      NOTIFIER.notifyVisit(res);
     }
     const onFailure = (error) => {
       console.log(error);
