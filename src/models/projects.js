@@ -10,20 +10,20 @@ export const projectModel = [
 
 export const projects = [
   {
-    name: "💪 TrainingDiary",
+    name: "TrainingDiary",
     timeline: {
       start: "05/2020",
       end: "08/2020"
     },
     repoLink: "https://github.com/dcfernandez1023/training-diary",
     appLink: "https://training-diary-td.herokuapp.com/",
-    description: `I built this application for fun during the summer of 2020.  It is a web application that allows users
+    description: `This application allows users
       to track, analyze, visualize, and personalize their fitness data.  I was motivated to build this application
       because I am passionate about fitness and wanted to have an app where I could dynamically create my own custom fitness categories,
       add data and set goals under each of these categories, and visualize my progress with graphs and pie charts.  I plan to recreate this
-      project in the near future as a mobile app.`,
-    role: `I played the role of a full-stack developer in this project by coding both the front-end and back-end, handling user login/authentication,
-    securing REST APIs, and configuring a NoSQL cloud database.`,
+      project in the near future as both a web app and mobile app.`,
+    role: `I built both the front-end and back-end, handled user login/authentication,
+    secured the application's REST APIs, and configured a NoSQL cloud database.`,
     technologies: [
       "React",
       "JavaScript",
@@ -42,21 +42,17 @@ export const projects = [
     },
     repoLink: "https://github.com/dcfernandez1023/AutoHub",
     appLink: "https://auto-hub-car-management.web.app/",
-    description: `I built this application during the winter break of my sophomore year.
-    It is a web application that allows users to add information about their automobiles including cost,
+    description: `This application allows users to add information about their automobiles including cost,
     maintenance, and scheduled services.  The application also displays the upcoming maintenance/services for
-    the user's cars and warns users of overdue maintenance/services.  Though all of this information is user-defined,
-    I am working on integrating data from a public car API to provide users with more information about their automobiles.
-    `,
-    role: ` I played the role of mainly a front-end developer on this project.  I did not need to code or setup a back-end server
-    since I used Google Firebase as a serverless back-end.  Their services provided me with access to a real-time database, secure
-    login/authentication, encryption over https, file storage, and deployment of the application.
-    `,
+    the user's cars and warns users of overdue maintenance/services.`,
+    role: `I built the front-end and created APIs to interface with Firebase's NoSQL cloud database.`,
     technologies: [
       "React",
       "JavaScript",
       "HTML/CSS",
       "Firebase",
+      "Firebase Auth",
+      "Firebase Hosting",
       "Cloud Firestore"
     ]
   },
@@ -68,19 +64,14 @@ export const projects = [
     },
     repoLink: "https://github.com/dcfernandez1023/ferns-bingo",
     appLink: "https://ferns-bingo.web.app/",
-    description: `I built this application for my family to use during Christmas 2020.  It is a Christmas tradition that
-    we have always had to play Bingo and donate prizes/gifts to the winner of each Bingo game.  However, due to the pandemic,
-    we could not gather and play Bingo the way we normally did.  So I created a web app that generated unique Bingo cards and another
-    person in my family created an application that randomly picked Bingo numbers.  We used both of these applications to keep our annual
-    Bingo tradition alive, and it was really fun to build.
-    `,
-    role: `I played the role of mainly a front-end developer on this project, as it was a very front-end heavy application.  I also did not
-    need to code or setup a back-end server since I used Google Firebase as a serverless back-end.`,
+    description: `This application generates unique Bingo cards for people to play Bingo.`,
+    role: `I built the front-end and created APIs to interface with Firebase's NoSQL cloud database.`,
     technologies: [
       "React",
       "JavaScript",
       "HTML/CSS",
       "Firebase",
+      "Firebase Hosting",
       "Cloud Firestore"
     ]
   }

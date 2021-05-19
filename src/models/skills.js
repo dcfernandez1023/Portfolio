@@ -25,6 +25,9 @@ export const skills = [
   },
   {
     skill: "Firebase"
+  },
+  {
+    skill: "SQL"
   }
 ];
 
@@ -34,9 +37,6 @@ export const familiar = [
   },
   {
     skill: "SpringBoot"
-  },
-  {
-    skill: "PostgreSQL"
   },
   {
     skill: "Express"
