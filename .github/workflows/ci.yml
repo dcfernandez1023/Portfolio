@@ -22,7 +22,8 @@ jobs:
         run: npm install
 
       - name: Build & deploy
-        run: npm run deploy
+        run: npm run build 
+        run: firebase deploy --token $FIREBASE_TOKEN
         env:
           CI: true
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
