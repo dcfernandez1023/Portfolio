@@ -43,11 +43,11 @@ function Projects(props) {
           x: 0,
           y: 0
         }}
-        style = {{maxHeight: "500px", maxWidth: "500px", margin: "10px"}}
+        style = {{maxHeight: "500px", minWidth: "700px", margin: "10px"}}
       >
         <Frame
           bg = "white"
-          style = {{overflowY: "auto", maxWidth: "500px", maxHeight: "475px"}}
+          style = {{overflowY: "auto", maxWidth: "690px", maxHeight: "475px"}}
         >
           <div style = {{margin: "5px"}}>
             {PROJECTS.projects.map((project) => {

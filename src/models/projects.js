@@ -10,6 +10,23 @@ export const projectModel = [
 
 export const projects = [
   {
+    name: "Productivity Tracker",
+    timeline: {
+      start: "07/2021",
+      end: "07/2021"
+    },
+    repoLink: "https://github.com/dcfernandez1023/productivity-tracker",
+    appLink: "https://expo.io/artifacts/09315cfc-8e0f-49d7-9968-769eb1b77d1b",
+    description: `This phone app allows users to set, complete, and view insights/progress
+      on their daily goals. (Note: clicking on the 'Productivity Tracker' link above will
+      download the Android APK for the phone app)`,
+    role: `Built the application end-to-end.`,
+    technologies: [
+      "React Native",
+      "Expo"
+    ]
+  },
+  {
     name: "TrainingDiary",
     timeline: {
       start: "05/2020",
