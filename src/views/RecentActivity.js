@@ -62,14 +62,14 @@ const RecentActivity = (props) => {
               </ListGroup.Item>
             );
           }
-          else if(item.type === "BLOG") {
+          else if(item.type === "BLOG_POST") {
             var itemDate = new Date(item.posted);
             return (
               <ListGroup.Item action>
                 <Row>
                   <Col>
                     <div>
-                      <Badge bg="secondary" style={{marginRight: "8px"}}> 🔗 Blog </Badge>
+                      <Badge bg="info" style={{marginRight: "8px"}}> 🔗 Blog </Badge>
                       {item.title}
                     </div>
                   </Col>

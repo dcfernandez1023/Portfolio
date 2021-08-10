@@ -32,29 +32,10 @@ import {
 local imports
 **********/
 import Home from './views/Home.js';
-
-/*********
-controller imports
-**********/
-const LOCATOR = require('./controllers/locator.js');
-const NOTIFIER = require('./controllers/notifier.js');
+import Projects from './views/Projects.js';
+import Blog from './views/Blog.js';
 
 function App() {
-
-  // useEffect(() => {
-  //   notifyMeOfVisit();
-  // }, []);
-  //
-  // const notifyMeOfVisit = () => {
-  //   const onSuccess = (res) => {
-  //     NOTIFIER.notifyVisit(res);
-  //   }
-  //   const onFailure = (error) => {
-  //     console.log(error);
-  //   }
-  //   LOCATOR.getLocation(onSuccess, onFailure);
-  // }
-
   return (
     <body>
       <Navbar collapseOnSelect expand="lg" bg="#E9F7EF" className="portfolio-color-theme">
@@ -92,6 +73,12 @@ function App() {
       <Container>
       <Router>
         <Switch>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
           <Route path="/">
             <Home />
           </Route>

@@ -8,7 +8,6 @@ const getRecentActivity = (callback) => {
     .orderBy("posted", "desc")
     .limit(8)
   .onSnapshot(querySnapshot => {
-    console.log("Hello");
     var temp = [];console.log(querySnapshot.docs.length);
     for(var i = 0; i < querySnapshot.docs.length; i++) {
       temp.push(querySnapshot.docs[i].data());
@@ -17,4 +16,34 @@ const getRecentActivity = (callback) => {
   });
 }
 
-export { getRecentActivity }
+const getProjects = (callback) => {
+  const onError = (error) => {
+    alert(error.message);
+  };
+  DB.getQuery("portfolio_data", onError)
+    .where("type", "==", "PROJECT")
+  .onSnapshot(querySnapshot => {
+    var temp = [];console.log(querySnapshot.docs.length);
+    for(var i = 0; i < querySnapshot.docs.length; i++) {
+      temp.push(querySnapshot.docs[i].data());
+    }
+    callback(temp);
+  });
+}
+
+const getBlogPosts = (callback) => {
+  const onError = (error) => {
+    alert(error.message);
+  };
+  DB.getQuery("portfolio_data", onError)
+    .where("type", "==", "BLOG_POST")
+  .onSnapshot(querySnapshot => {
+    var temp = [];console.log(querySnapshot.docs.length);
+    for(var i = 0; i < querySnapshot.docs.length; i++) {
+      temp.push(querySnapshot.docs[i].data());
+    }
+    callback(temp);
+  });
+}
+
+export { getRecentActivity, getProjects, getBlogPosts }
