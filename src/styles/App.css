@@ -1,11 +1,28 @@
-.App {
+html, body {
+  /* background-color: #E9F7EF; */
+}
+
+.portfolio-color-theme {
+  background-color: #E9F7EF;
+}
+
+.portfolio-description-text {
+  font-size: 20px;
+  color: #7B7D7D;
+}
+
+.portfolio-nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.center-align {
   text-align: center;
 }
 
-html, body {
+/* html, body {
   background: url('../background.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
-  /*background-color: rgb(85, 170, 170);*/
-}
+} */
