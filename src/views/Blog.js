@@ -9,34 +9,58 @@ react-bootstrap imports
 import {
   Row,
   Col,
-  ListGroup
+  ListGroup,
+  Spinner
 } from 'react-bootstrap';
 
 
 const CONTROLLER = require('../controllers/portfolioController.js');
 
 const Blog = (props) => {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState();
 
   useEffect(() => {
     CONTROLLER.getBlogPosts(setPosts);
   }, []);
 
+  if(posts === undefined) {
+    return (
+      <div>
+        <br/>
+        <Row>
+          <Col className="center-align">
+            <Spinner animation="border" />
+          </Col>
+        </Row>
+      </div>
+    );
+  }
   return (
     <div>
       <Row>
         <Col>
-          <h3> 🔗 Blog Posts </h3>
+          <h2> 🔗 Blog Posts </h2>
+        </Col>
+      </Row>
+      <Row>
+        <Col style={{marginLeft: "20px"}}>
+          <i> A list of random things I geek out on </i>
         </Col>
       </Row>
       <br/>
       <Row>
         <Col>
           <ListGroup variant={posts.length <= 1 ? "" : "flush"}>
-            {posts.map((post) => {
+            {posts.map((post, index) => {
               var itemDate = new Date(post.posted);
               return (
-                <ListGroup.Item action>
+                <ListGroup.Item
+                  key={index}
+                  action
+                  onClick={() => {
+                    window.open(post.link, "_blank")
+                  }}
+                >
                   <Row>
                     <Col>
                       <div>

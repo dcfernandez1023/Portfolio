@@ -2,6 +2,10 @@ html, body {
   /* background-color: #E9F7EF; */
 }
 
+.clickable-card {
+  cursor: pointer;
+}
+
 .portfolio-color-theme {
   background-color: #E9F7EF;
 }
@@ -20,11 +24,21 @@ html, body {
   text-align: center;
 }
 
+.right-align {
+  text-align: right
+}
+
 .project-card-image {
   object-fit: cover;
   float: left;
   width: 100%;
-  height: 100%;
+  height: 200px;
+}
+
+.project-carousel-image {
+  object-fit: contain;
+  width: 100%;
+  height: 500px;
 }
 
 .card-equal-height {

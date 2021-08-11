@@ -34,6 +34,9 @@ local imports
 import Home from './views/Home.js';
 import Projects from './views/Projects.js';
 import Blog from './views/Blog.js';
+import ProjectPage from './views/ProjectPage.js';
+import Experience from './views/Experience.js';
+import AboutMe from './views/AboutMe.js';
 
 function App() {
   return (
@@ -42,7 +45,7 @@ function App() {
         <Container>
           <Navbar.Brand href="/">
             <img
-              src="portfolio.png"
+              src="/portfolio.png"
               style={{marginRight: "5px", marginBottom: "3px"}}
             />
             dom-portfolio
@@ -73,11 +76,20 @@ function App() {
       <Container>
       <Router>
         <Switch>
+          <Route path="/projects/:projectId">
+            <ProjectPage />
+          </Route>
           <Route path="/projects">
             <Projects />
           </Route>
           <Route path="/blog">
             <Blog />
+          </Route>
+          <Route path="/experience">
+            <Experience />
+          </Route>
+          <Route path="/about">
+            <AboutMe />
           </Route>
           <Route path="/">
             <Home />

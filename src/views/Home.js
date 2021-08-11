@@ -87,7 +87,11 @@ const Home = (props) => {
               </Button>
             </Col>
             <Col className="center-align">
-              <Button style={{width: "100%"}} size="lg" variant="info">
+              <Button style={{width: "100%"}} size="lg" variant="info"
+                onClick={() => {
+                  window.location.pathname="/about";
+                }}
+              >
                 About Me
               </Button>
             </Col>
@@ -115,6 +119,8 @@ const Home = (props) => {
           <RecentActivity />
         </Col>
       </Row>
+      <br/>
+      <br/>
     </Container>
   );
 }

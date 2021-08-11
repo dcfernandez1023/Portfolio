@@ -10,18 +10,31 @@ import {
   Row,
   Col,
   ListGroup,
-  Badge
+  Badge,
+  Spinner
 } from 'react-bootstrap';
 
 const CONTROLLER = require('../controllers/portfolioController.js');
 
 const RecentActivity = (props) => {
-  const [activity, setActivity] = useState([]);
+  const [activity, setActivity] = useState();
 
   useEffect(() => {
     CONTROLLER.getRecentActivity(setActivity);
   }, []);
 
+  if(activity === undefined) {
+    return (
+      <div>
+        <br/>
+        <Row>
+          <Col className="center-align">
+            <Spinner animation="border" />
+          </Col>
+        </Row>
+      </div>
+    );
+  }
   return (
     <Row>
       <ListGroup variant="flush">
@@ -29,7 +42,12 @@ const RecentActivity = (props) => {
           if(item.type === "PROJECT") {
             var itemDate = new Date(item.posted);
             return (
-              <ListGroup.Item action>
+              <ListGroup.Item
+                action
+                onClick={() => {
+                  window.location.pathname = "/projects/" + item.id;
+                }}
+              >
                 <Row>
                   <Col>
                     <div>
@@ -47,7 +65,12 @@ const RecentActivity = (props) => {
           else if(item.type === "EXPERIENCE") {
             var itemDate = new Date(item.posted);
             return (
-              <ListGroup.Item action>
+              <ListGroup.Item
+               action
+               onClick={() => {
+                 window.location.pathname = "/experience";
+               }}
+              >
                 <Row>
                   <Col>
                     <div>
@@ -65,7 +88,12 @@ const RecentActivity = (props) => {
           else if(item.type === "BLOG_POST") {
             var itemDate = new Date(item.posted);
             return (
-              <ListGroup.Item action>
+              <ListGroup.Item
+                onClick={() => {
+                  window.open(item.link, "_blank")
+                }}
+               action
+              >
                 <Row>
                   <Col>
                     <div>
