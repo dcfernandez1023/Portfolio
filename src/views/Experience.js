@@ -47,7 +47,7 @@ const Experience = (props) => {
       <Row>
         {experience.map((item, index) => {
           return (
-            <Col md={6}>
+            <Col xl={6}>
               <Row>
                 <Col>
                   <h5> {item.title} </h5>

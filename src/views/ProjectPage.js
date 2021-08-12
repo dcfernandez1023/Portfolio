@@ -89,15 +89,15 @@ const ProjectPage = (props) => {
       <Row>
         <p>
           💻 Technologies:
-          <ListGroup variant="flush">
+          <ul>
             {project.technologies.map((technology) => {
               return (
-                <ListGroup.Item>
+                <li>
                   {technology}
-                </ListGroup.Item>
+                </li>
               );
             })}
-          </ListGroup>
+          </ul>
         </p>
       </Row>
       <br/>
