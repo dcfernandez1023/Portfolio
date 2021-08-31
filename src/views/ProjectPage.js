@@ -113,6 +113,8 @@ const ProjectPage = (props) => {
         </Carousel>
       </Row>
       <br/>
+      <br/>
+      <br/>
     </Container>
   );
 }

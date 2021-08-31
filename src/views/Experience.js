@@ -44,40 +44,33 @@ const Experience = (props) => {
         </Col>
       </Row>
       <br/>
-      <Row>
+      <Row class="row-eq-height">
         {experience.map((item, index) => {
           return (
             <Col xl={6}>
-              <Row>
-                <Col>
-                  <h5> {item.title} </h5>
-                </Col>
-              </Row>
-              <Row style={{marginBottom: "8px"}}>
-                <Col>
-                  <i> {item.startDate} - {item.endDate} </i>
-                </Col>
-              </Row>
-              <Row style={{marginBottom: "8px"}}>
-                <Col>
-                  🏢 {item.company}
-                  <a
-                    style={{textDecoration:"none",color:"black", marginLeft: "3px"}}
-                    className="clickable-card"
-                    onClick={() => {
-                      window.open(item.companyUrl, "_blank");
-                    }}
-                  >
-                    <img style={{marginBottom: "3px", width: "20px", height: "20px"}} src="/external-link.png" />
-                  </a>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  📝 {item.description}
-                </Col>
-              </Row>
-              <hr/>
+              <Card style={{height: "100%"}}>
+                <Card.Body>
+                  <Card.Title> {item.title} </Card.Title>
+                  <Card.Text>
+                    <div> <i> {item.startDate} - {item.endDate} </i> </div>
+                    <div>
+                      🏢 {item.company}
+                      <a
+                        style={{textDecoration:"none",color:"black", marginLeft: "3px"}}
+                        className="clickable-card"
+                        onClick={() => {
+                          window.open(item.companyUrl, "_blank");
+                        }}
+                      >
+                        <img style={{marginBottom: "3px", width: "20px", height: "20px"}} src="/external-link.png" />
+                      </a>
+                    </div>
+                    <div>
+                      📝 {item.description}
+                    </div>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
           );
         })}
