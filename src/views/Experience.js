@@ -24,6 +24,19 @@ const Experience = (props) => {
     CONTROLLER.getExperience(setExperience);
   }, []);
 
+  const parseExperienceDescription = (description) => {
+    var bullets = description.split("<break>");
+    return (
+      <div>
+        {bullets.map((bullet) => {
+          return (
+            <li> {bullet} </li>
+          );
+        })}
+      </div>
+    );
+  }
+
   if(experience === undefined) {
     return (
       <div>
@@ -65,9 +78,8 @@ const Experience = (props) => {
                         <img style={{marginBottom: "3px", width: "20px", height: "20px"}} src="/external-link.png" />
                       </a>
                     </div>
-                    <div>
-                      📝 {item.description}
-                    </div>
+                    <hr/>
+                    {parseExperienceDescription(item.description)}
                   </Card.Text>
                 </Card.Body>
               </Card>
