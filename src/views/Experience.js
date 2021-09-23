@@ -11,8 +11,12 @@ import {
   Row,
   Col,
   Card,
-  Spinner
+  Spinner,
+  Accordion
 } from 'react-bootstrap';
+
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 const CONTROLLER = require('../controllers/portfolioController.js');
 
@@ -30,7 +34,9 @@ const Experience = (props) => {
       <div>
         {bullets.map((bullet) => {
           return (
-            <li> {bullet} </li>
+            <div style={{marginBottom: "10px"}}>
+              ⭐ {bullet}
+            </div>
           );
         })}
       </div>
@@ -57,6 +63,41 @@ const Experience = (props) => {
         </Col>
       </Row>
       <br/>
+      <VerticalTimeline>
+        {experience.map((experience) => {
+          return (
+            <VerticalTimelineElement
+              key={"experience-" + experience.id}
+              date={experience.startDate + " - " + experience.endDate}
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            >
+              <h5 className="vertical-timeline-element-title" style={{marginBottom: "5px"}}> {experience.title} </h5>
+              <div style={{marginBottom: "5px"}}>
+                🏢 {experience.company}
+                <a
+                  style={{textDecoration:"none",color:"black", marginLeft: "3px"}}
+                  className="clickable-card"
+                  onClick={() => {
+                    window.open(experience.companyUrl, "_blank");
+                  }}
+                >
+                  <img style={{marginBottom: "3px", width: "20px", height: "20px"}} src="/external-link.png" />
+                </a>
+              </div>
+              <div style={{marginBottom: "10px"}}> 📍 {experience.location} </div>
+              <Accordion>
+                <Accordion.Item eventKey={experience.id}>
+                  <Accordion.Header> Role Description </Accordion.Header>
+                  <Accordion.Body> {parseExperienceDescription(experience.description)} </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </VerticalTimelineElement>
+          );
+        })}
+      </VerticalTimeline>
+      <br/>
+      <br/>
+      {/*
       <Row class="row-eq-height">
         {experience.map((item, index) => {
           return (
@@ -86,7 +127,7 @@ const Experience = (props) => {
             </Col>
           );
         })}
-      </Row>
+      </Row>*/}
       <br/>
     </Container>
   );
