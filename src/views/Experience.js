@@ -85,7 +85,7 @@ const Experience = (props) => {
                 </a>
               </div>
               <div style={{marginBottom: "10px"}}> 📍 {experience.location} </div>
-              <Accordion>
+              <Accordion defaultActiveKey={experience.id}>
                 <Accordion.Item eventKey={experience.id}>
                   <Accordion.Header> Role Description </Accordion.Header>
                   <Accordion.Body> {parseExperienceDescription(experience.description)} </Accordion.Body>
