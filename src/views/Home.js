@@ -24,7 +24,8 @@ const Home = (props) => {
   const BUTTON_TEXTS = [
     "Projects",
     "Experience",
-    "Blog"
+    "Blog",
+    "Coursework"
   ];
   const [index, setIndex] = useState(0);
 
@@ -59,6 +60,9 @@ const Home = (props) => {
     }
     else if(val === "Blog") {
       window.location.pathname = "/blog";
+    }
+    else if(val === "Coursework") {
+      window.location.pathname = "/coursework";
     }
   }
 

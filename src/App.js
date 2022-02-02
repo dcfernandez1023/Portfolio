@@ -24,8 +24,7 @@ react-router-dom imports
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 /*********
@@ -37,6 +36,8 @@ import Blog from './views/Blog.js';
 import ProjectPage from './views/ProjectPage.js';
 import Experience from './views/Experience.js';
 import AboutMe from './views/AboutMe.js';
+import Coursework from './views/Coursework';
+import NotFound from './views/NotFound';
 
 function App() {
   return (
@@ -55,8 +56,8 @@ function App() {
             <Nav className="me-auto">
             </Nav>
             <Nav>
-              <Nav.Link className="portfolio-nav-link" href="/about">
-                About
+              <Nav.Link className="portfolio-nav-link" href="/">
+                Home
               </Nav.Link>
               <Nav.Link className="portfolio-nav-link" href="/projects">
                 Projects
@@ -67,6 +68,7 @@ function App() {
               <Nav.Link className="portfolio-nav-link" href="/blog">
                 Blog
               </Nav.Link>
+              <Nav.Link className="portfolio-nav-link" href="/coursework"> Coursework </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -85,15 +87,19 @@ function App() {
           <Route path="/blog">
             <Blog />
           </Route>
+          <Route path="/coursework">
+            <Coursework />
+          </Route>
           <Route path="/experience">
             <Experience />
           </Route>
           <Route path="/about">
             <AboutMe />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
+          <Route path="*" component={NotFound} />
         </Switch>
       </Router>
       </Container>
