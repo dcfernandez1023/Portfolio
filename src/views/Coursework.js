@@ -10,7 +10,7 @@ const Coursework = () => {
     return (
         <Container>
             <Row>
-                <Col> 
+                <Col>
                     <h2> 🏫 Coursework </h2>
                 </Col>
             </Row>
@@ -24,7 +24,7 @@ const Coursework = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col> 
+                            <Col>
                                 <i style={{fontSize: "15px"}}> {work.school} </i>
                             </Col>
                         </Row>
@@ -36,14 +36,15 @@ const Coursework = () => {
                                     <strong> {assignment.name} </strong>
                                     <ListGroup variant="flush" key={assignmentKey}>
                                         {assignment.links.map((link, linkIndex) => {
-                                            let linkId = assignmentKey + "-link-" + linkIndex.toString(); 
+                                            let linkId = assignmentKey + "-link-" + linkIndex.toString();
                                             return (
-                                                <ListGroup.Item key={linkId}>  
+                                                <ListGroup.Item key={linkId}>
                                                     ⭐ <a href={link.link} target="_blank" rel="noreferrer"> {link.title} </a>
                                                 </ListGroup.Item>
                                             );
                                         })}
                                     </ListGroup>
+                                    <br/>
                                 </div>
                             );
                         })}

@@ -49,7 +49,7 @@ function App() {
               src="/portfolio.png"
               style={{marginRight: "5px", marginBottom: "3px"}}
             />
-            dom-portfolio
+            Dominic Fernandez
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse>
