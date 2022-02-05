@@ -14,10 +14,11 @@ export const coursework = [
                 ]
             },
             {
-                name: "A2 - Visualizing Amounts using P5",
+                name: "A2 - Introduction to Visualizing Amounts using P5",
                 links: [
-                    {title: "Test Link to Vizhub", link: "https://vizhub.com/"},
-                    {title: "Another Test Link to Vizhub", link: "https://vizhub.com/"}
+                    {title: "Bar Chart", link: "https://vizhub.com/dcfernandez1023/19e833f2dc12422e987b34d62afaad6d"},
+                    {title: "Dot Plot", link: "https://vizhub.com/dcfernandez1023/cf152fd8f54046438950e090c871317c"},
+                    {title: "Heatmap", link: "https://vizhub.com/dcfernandez1023/3a9b4976099e4cb09ff6b7f333335028"}
                 ]
             }
         ]
