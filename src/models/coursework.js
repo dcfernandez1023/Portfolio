@@ -12,7 +12,7 @@ export const coursework = [
                     {title: "Favorite Website 2 (Medium)", link: "https://medium.com/"},
                     {title: "Favorite Website 3 (Youtube)", link: "https://www.youtube.com/"}
                 ]
-            },
+            }, 
             {
                 name: "A2 - Introduction to Visualizing Amounts using P5",
                 links: [
