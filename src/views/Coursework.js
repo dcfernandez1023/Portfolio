@@ -20,7 +20,7 @@ const Coursework = () => {
                     <div key={work.course + "-" + index.toString()}>
                         <Row>
                             <Col>
-                                <h5> {work.course} </h5>
+                                <h4> {work.course} </h4>
                             </Col>
                         </Row>
                         <Row>
@@ -33,7 +33,7 @@ const Coursework = () => {
                             let assignmentKey = assignment.name + "-" + assignmentIndex.toString();
                             return (
                                 <div style={{marginLeft: "30px"}}>
-                                    <strong> {assignment.name} </strong>
+                                    <h5> {assignment.name} </h5>
                                     <ListGroup variant="flush" key={assignmentKey}>
                                         {assignment.links.map((link, linkIndex) => {
                                             let linkId = assignmentKey + "-link-" + linkIndex.toString();
