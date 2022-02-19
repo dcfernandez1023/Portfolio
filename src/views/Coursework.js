@@ -29,7 +29,7 @@ const Coursework = () => {
                             </Col>
                         </Row>
                         <br/>
-                        {work.assignments.map((assignment, assignmentIndex) => {
+                        {work.assignments.reverse().map((assignment, assignmentIndex) => {
                             let assignmentKey = assignment.name + "-" + assignmentIndex.toString();
                             return (
                                 <div style={{marginLeft: "30px"}}>

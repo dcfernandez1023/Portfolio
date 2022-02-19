@@ -28,6 +28,14 @@ export const coursework = [
                     {title: "Box Plot - Distribution of Base Salary in SF (2011-2014)", link: "https://vizhub.com/dcfernandez1023/b3b1d8be4a954d7ba95c9bfebabe4a32"},
                     {title: "Strip Chart - Distribution of Overtime Earnings per Year in SF (2011-2014)", link: "https://vizhub.com/dcfernandez1023/67298996b0d0439b9499900a32f435ab"}
                 ]
+            },
+            {
+                name: "Assignment 4 - Introduction to D3",
+                links: [
+                    {title: "Bar Chart - Number of Uber Rides per Year", link: "https://vizhub.com/dcfernandez1023/5142d02380cf4b6a903a9c9b0c76147a"},
+                    {title: "Scatterplot - Uber Fare Amount per Day (2009-2015)", link: "https://vizhub.com/dcfernandez1023/9943cf8834714eb09d57666ed370690f"},
+                    {title: "Heatmap - Number of Uber Rides per Month and Year", link: "https://vizhub.com/dcfernandez1023/80344c41a7b648e8a7791907358fc67f"}
+                ]
             }
         ]
     }
