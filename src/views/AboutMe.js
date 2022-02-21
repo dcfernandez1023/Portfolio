@@ -34,24 +34,15 @@ const AboutMe = (props) => {
         </Col>
       </Row>
       <Row>
-        <Col className="right-align">
-          <a
-            href="mailto:dominic.fernandez1023@gmail.com"
-            target="_blank"
-          >
-            <img src="/email.png" style={{marginLeft: "8px", height: "30px", width: "30px"}} />
+        <Col style={{textAlign: "right"}}>
+          <a href="https://github.com/dcfernandez1023" target="_blank" style={{marginRight: "10px"}}>
+            <i class="nes-octocat animate"></i>
           </a>
-          <a
-            href="https://github.com/dcfernandez1023"
-            target="_blank"
-          >
-            <img src="/github-logo.png" style={{marginLeft: "8px", height: "30px", width: "30px"}} />
+          <a href="https://www.linkedin.com/in/dominic-fernandez-480a20192/" target="_blank" style={{marginRight: "10px"}}>
+            <i class="nes-icon linkedin is-large"></i>
           </a>
-          <a
-            href="https://www.linkedin.com/in/dominic-fernandez-480a20192/"
-            target="_blank"
-          >
-            <img src="/linkedin.png" style={{marginLeft: "8px", height: "30px", width: "30px"}} />
+          <a href="mailto:dominic.fernandez1023@gmail.com" target="_blank" style={{marginRight: "10px"}}>
+            <i class="nes-icon gmail is-large"></i>
           </a>
         </Col>
       </Row>

@@ -69,10 +69,10 @@ const Home = (props) => {
   return (
     <Container fluid>
       <Row>
-        <Col lg={5}>
-          <h1 style={{marginBottom: "20px"}}> Welcome to my portfolio website! </h1>
+        <Col lg={5} style={{marginBottom: "15px"}}>
+          <h1 style={{marginBottom: "20px"}}> Hey there! 👋 </h1>
           <p className="portfolio-description-text">
-            Basically, this is the more fun and interactive version of my
+            This website is the more fun and interactive version of my
             resume or Linkedin.  Here lies info about my
             experience, side projects, and some articles, websites, and technologies
             that I find interesting.
@@ -98,6 +98,19 @@ const Home = (props) => {
               >
                 About Me
               </Button>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{textAlign: "center"}}>
+              <a href="https://github.com/dcfernandez1023" target="_blank" style={{marginRight: "10px"}}>
+                <i class="nes-octocat animate"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/dominic-fernandez-480a20192/" target="_blank" style={{marginRight: "10px"}}>
+                <i class="nes-icon linkedin is-large"></i>
+              </a>
+              <a href="mailto:dominic.fernandez1023@gmail.com" target="_blank" style={{marginRight: "10px"}}>
+                <i class="nes-icon gmail is-large"></i>
+              </a>
             </Col>
           </Row>
         </Col>
