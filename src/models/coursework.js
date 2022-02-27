@@ -36,7 +36,15 @@ export const coursework = [
                     {title: "Scatterplot - Uber Fare Amount per Day (2009-2015)", link: "https://vizhub.com/dcfernandez1023/9943cf8834714eb09d57666ed370690f"},
                     {title: "Heatmap - Number of Uber Rides per Month and Year", link: "https://vizhub.com/dcfernandez1023/80344c41a7b648e8a7791907358fc67f"}
                 ]
-            }
+            },
+            {
+                name: "Assignment 5 - Multidimensional Visualization in D3",
+                links: [
+                    {title: "Bubble Chart - Comparison of total COVID cases, total COVID deaths, and population size among the continents in 2020", link: "https://vizhub.com/dcfernandez1023/366804562a644d1b8cc1e9cc8538e576"},
+                    {title: "Line Chart - Number of Reported COVID Cases per Month in the USA (2020)", link: "https://vizhub.com/dcfernandez1023/7da99bc0d3f24d7cae78c0c412a03c38"},
+                    {title: "Scatterplot Matrix - Comparison of total COVID cases, total COVID deaths, and population size among the continents in 2020", link: "https://vizhub.com/dcfernandez1023/cd6a45a7835e4414b86dfab6569f3b77"}
+                ]
+            },
         ]
     }
 ]
