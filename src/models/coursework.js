@@ -45,12 +45,19 @@ export const coursework = [
                     {title: "Scatterplot Matrix - Comparison of total COVID cases, total COVID deaths, and population size among the continents in 2020", link: "https://vizhub.com/dcfernandez1023/cd6a45a7835e4414b86dfab6569f3b77"}
                 ]
             },
-                        {
+            {
                 name: "Assignment 6 - Color Scales in D3",
                 links: [
                     {title: "Bar Chart with Sequential Color Scale - Percentage of Households that have Internet and the Median Household Income of Each State in the U.S (2015-2019)", link: "https://vizhub.com/dcfernandez1023/4be3c8665bc54ef6bc2c98c3234ada03"},
                     {title: "Bar Chart with Diverging Color Scale - Number of Firms Owned by Men vs. Women in Each State in the U.S (2015-2019)", link: "https://vizhub.com/dcfernandez1023/8ff5ebb9dba34084bbb5a94e1ffa804c"},
                     {title: "Scatterplot with Qualitative Color Scale - Comparison of Median Household Income and Percentage of People with a Bachelor's Degree or Higher in Each Region of the U.S (2015-2019)", link: "https://vizhub.com/dcfernandez1023/bde831134e3d4f25883f847ec0b99524"}
+                ]
+            },
+            {
+                name: "Assignment 7 - Graph Visualization in D3",
+                links: [
+                    {title: "Node-Link Diagram (with tooltips on hover) - A Social Network of Bottlenose Dolphins", link: "https://vizhub.com/dcfernandez1023/c82676de25bc47b5ad3b65494fe24e74"},
+                    {title: "Adjacency Matrix (with tooltips on hover) - A Social Network of Bottlenose Dolphins", link: "https://vizhub.com/dcfernandez1023/dcd53499df8e4d42b4da9121412e2d01"}
                 ]
             },
         ]
