@@ -57,7 +57,8 @@ export const coursework = [
                 name: "Assignment 7 - Graph Visualization in D3",
                 links: [
                     {title: "Node-Link Diagram (with tooltips on hover) - A Social Network of Bottlenose Dolphins", link: "https://vizhub.com/dcfernandez1023/c82676de25bc47b5ad3b65494fe24e74"},
-                    {title: "Adjacency Matrix (with tooltips on hover) - A Social Network of Bottlenose Dolphins", link: "https://vizhub.com/dcfernandez1023/dcd53499df8e4d42b4da9121412e2d01"}
+                    {title: "Adjacency Matrix (with tooltips on hover) - A Social Network of Bottlenose Dolphins", link: "https://vizhub.com/dcfernandez1023/dcd53499df8e4d42b4da9121412e2d01"},
+                    {title: "Node-Link Diagram with Edge Bundling", link: "https://vizhub.com/dcfernandez1023/2ac5d9d2a3184788ad26670e0dc1666e?edit=files"},
                 ]
             },
         ]
