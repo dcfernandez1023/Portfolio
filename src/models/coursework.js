@@ -61,6 +61,12 @@ export const coursework = [
                     {title: "Node-Link Diagram with Edge Bundling", link: "https://vizhub.com/dcfernandez1023/2ac5d9d2a3184788ad26670e0dc1666e?edit=files"},
                 ]
             },
+            {
+                name: "Assignment 8 - Interaction in D3",
+                links: [
+                    {title: "Interaction with Multi-Series Line Chart", link: "https://vizhub.com/dcfernandez1023/b45bac28be8f4e0f9157901a089e3a51?edit=files&file=index.html"}
+                ]
+            },
         ]
     }
 ]
