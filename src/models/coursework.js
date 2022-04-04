@@ -64,7 +64,9 @@ export const coursework = [
             {
                 name: "Assignment 8 - Interaction in D3",
                 links: [
-                    {title: "Interaction with Multi-Series Line Chart", link: "https://vizhub.com/dcfernandez1023/b45bac28be8f4e0f9157901a089e3a51?edit=files&file=index.html"}
+                    {title: "Filtering with Multi-Series Line Chart", link: "https://vizhub.com/dcfernandez1023/b46d5bea9b504b959ab1013e65a7a371"},
+                    {title: "Filtering + Brushing with Multi-Series Line Chart", link: "https://vizhub.com/dcfernandez1023/7b79b93a73c0405c9cb313ec03d7009d"},
+                    {title: "Filtering + Brushing + Zooming with Multi-Series Line Chart", link: "https://vizhub.com/dcfernandez1023/b45bac28be8f4e0f9157901a089e3a51"}
                 ]
             },
         ]
