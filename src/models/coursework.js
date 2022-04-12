@@ -69,6 +69,14 @@ export const coursework = [
                     {title: "Filtering + Brushing + Zooming with Multi-Series Line Chart", link: "https://vizhub.com/dcfernandez1023/b45bac28be8f4e0f9157901a089e3a51"}
                 ]
             },
+            {
+                name: "Assignment 9 - Geo Visualization in D3",
+                links: [
+                    {title: "Choropleth Map of U.S. with Tooltips", link: "https://vizhub.com/dcfernandez1023/59b8675417644345997b0742e4bfeefb"},
+                    {title: "Proportional Symbols Map of U.S. with Tooltips and Highlights", link: "https://vizhub.com/dcfernandez1023/c43faea414be46ac9ea80c6ffbef16bf"},
+                    {title: "Choropleth Map of World with Tooltips", link: "https://vizhub.com/dcfernandez1023/b460507a10c34d95acf4a0a6b25ee0da"}
+                ]
+            },
         ]
     }
 ]
