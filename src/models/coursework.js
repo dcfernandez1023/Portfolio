@@ -77,6 +77,14 @@ export const coursework = [
                     {title: "Choropleth Map of World with Tooltips", link: "https://vizhub.com/dcfernandez1023/b460507a10c34d95acf4a0a6b25ee0da"}
                 ]
             },
+            {
+                name: "Assignment 10 - White Hat Black Hat",
+                links: [
+                    {title: "C Requirement - Stacked Bars vs. Grouped Bars", link: "https://vizhub.com/dcfernandez1023/031308e621b940b4bb2c54937c46df37"},
+                    {title: "B Requirement - Pie Chart vs. Bar Chart", link: "https://vizhub.com/dcfernandez1023/31080218be4541b381679b89afcac114"},
+                    {title: "A Requirement - Area Chart vs. Multi-series Line Chart", link: "https://vizhub.com/dcfernandez1023/0cb7b03a632e474a839cc664f96245c5"}
+                ]
+            },
         ]
     }
 ]
