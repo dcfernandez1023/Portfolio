@@ -32,7 +32,6 @@ local imports
 **********/
 import Home from './views/Home.js';
 import Projects from './views/Projects.js';
-import Blog from './views/Blog.js';
 import ProjectPage from './views/ProjectPage.js';
 import Experience from './views/Experience.js';
 import AboutMe from './views/AboutMe.js';
@@ -48,6 +47,7 @@ function App() {
             <img
               src="/portfolio.png"
               style={{marginRight: "5px", marginBottom: "3px"}}
+              alt="Dominic Fernandez"
             />
             Dominic Fernandez
           </Navbar.Brand>
@@ -65,9 +65,6 @@ function App() {
               <Nav.Link className="portfolio-nav-link" href="/experience">
                 Experience
               </Nav.Link>
-              <Nav.Link className="portfolio-nav-link" href="/blog">
-                Blog
-              </Nav.Link>
               <Nav.Link className="portfolio-nav-link" href="/coursework"> Coursework </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -83,9 +80,6 @@ function App() {
           </Route>
           <Route path="/projects">
             <Projects />
-          </Route>
-          <Route path="/blog">
-            <Blog />
           </Route>
           <Route path="/coursework">
             <Coursework />
